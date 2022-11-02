@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\Sarig\Downloads\bot\static\css\chat.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+ <!-- Chat Block -->
+ <div class="chat-bar-collapsible">
+  <button id="chat-button" type="button" class="collapsible"> Talk With Us!
+      <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+  </button>
+
+  <div class="content">
+      <div class="full-chat-block">
+          <!-- Message Container -->
+          <div class="outer-container">
+              <div class="chat-container">
+                  <!-- Messages -->
+                  <div id="chatbox">
+                      <h5 id="chat-timestamp"></h5>
+                      <p id="botStarterMessage" class="botText"><span>Please Wait kindly as we Load...</span></p>
+                  </div>
+                        <!-- User input box -->
+                   <div class="chat-bar-input-block">
+                   <div id="userInput">
+                    <input id="textInput" class="input-box" type="text" name="msg"
+                    placeholder="Tap 'Enter' to send a message">
+                     <p></p>
+                   </div>
+                   <div class="chat-bar-icons">
+                      <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                          onclick="heartButton()"></i>
+                      <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                          onclick="sendButton()"></i>
+                  </div>
+              </div>
+
+              <div id="chat-bar-bottom">
+                  <p></p>
+              </div>
+              </div>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="C:\Users\Sarig\Downloads\bot\static\scripts\responses.js"></script>
+<script src="C:\Users\Sarig\Downloads\bot\static\scripts\chat.js"></script>
+<script src="C:\Users\Sarig\Downloads\bot\static\scripts\refund.js"></script>
+<script src="C:\Users\Sarig\Downloads\bot\static\scripts\Pinquiries.js"></script>
+<script src="C:\Users\Sarig\Downloads\bot\static\scripts\Binquiries.js"></script>
+</html>

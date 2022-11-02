@@ -1,0 +1,41 @@
+export const actionType = {
+    SET_USER: "SET_USER",
+    SET_COMPUTER_ITEMS: "SET_COMPUTER_ITEMS",
+    SET_CART_SHOW: "SET_CART_SHOW",
+    SET_CARTITEMS: "SET_CARTITEMS"
+  };
+  
+  const reducer = (state, action) => {
+     //console.log(action);
+  
+    switch (action.type) {
+      case actionType.SET_USER:
+        return {
+          ...state,
+          user: action.user,
+        };
+
+      case actionType.SET_COMPUTER_ITEMS:
+        return {
+          ...state,
+          computerItems: action.computerItems,
+        };
+
+        case actionType.SET_CART_SHOW:
+          return {
+            ...state,
+            cartShow: action.cartShow,
+          };
+
+          case actionType.SET_CARTITEMS:
+        return {
+          ...state,
+          cartItems: action.cartItems,
+        };
+
+      default:
+        return state;
+    }
+  };
+  
+  export default reducer;
